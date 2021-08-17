@@ -6,7 +6,6 @@ import Instagram from '../assets/img/Instagram_icon.png';
 import Facebook from '../assets/img/facebook_icon.png';
 import Strengths_1 from '../assets/img/strengths_1.jpg';
 import Strengths_2 from '../assets/img/strengths_2.jpg';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 function home() {
     return (
