@@ -1,0 +1,213 @@
+.main {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  color: #707070;
+  font-family: 'Noto Sans JP',sans-serif;
+  font-size: 20px;
+  text-align: center;
+  background-position: center;
+  line-height: 150%;
+}
+
+h3 {
+  font-size: 45px;
+}
+
+@media (max-width:768px){
+.main{
+  font-size: 3vw;
+}
+h3{
+  font-size: 7vw;
+}
+}
+
+/*　見出し線
+--------------------------------*/
+.heading {
+  display: flex;
+  align-items: center;
+}
+.heading:before,.heading:after {
+  content: "";
+  height: 2px;
+  flex-grow: 1;
+  background-color: #B8E1EC;
+}
+.heading:before {
+  margin-right: 4rem;
+}
+  
+.heading:after {
+  margin-left: 4rem;
+}
+
+@media screen and (max-width:600px){
+.heading:before{
+  margin-right: 2rem;
+}
+.heading::after{
+  margin-left: 2rem;
+}
+}
+
+/*　メイン
+--------------------------------*/
+.home {
+  position: relative;
+}
+.main_img {
+  /* width: 100%; */
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  vertical-align: bottom;
+}
+
+.text_area{
+  position: absolute;
+  color: #ffffff;
+  font-family:'Orelega One', 'cursive';
+  font-family: 'Ubuntu',sans-serif;
+  font-size: 45px;
+  top: 50%;
+  left: 45%;
+  margin-top: -50px;
+  margin-left: -100px;
+}
+
+@media  screen and (max-width:450px) {
+  .text_area{
+      font-size: 35px;
+  }
+}
+@media screen and (max-width:280px) {
+  .text_area{
+      font-size: 20px;
+  }
+}
+
+/*　About (自己紹介）
+--------------------------------*/
+
+.profile {
+  padding-top: 10px;
+  margin-top: -1vw;
+  margin-bottom: 2vw;
+  line-height: 100%;
+  text-align: center;
+  }
+
+  .iam-img {
+      width: 20vw;
+      border-radius: 50%;
+  }
+  .icon {
+    width: 60px;
+    margin: 20px;
+  }
+
+@media screen and (max-width:768px){
+    .iam-img{
+        width: 40vw;
+    }
+    .icon{
+        width: 10vw;  
+    }
+}
+
+
+/* Strenghs (強み）
+--------------------------------*/
+.strengths {
+    display: flex;
+    padding: 70px;
+}
+
+.strengths_img {
+    width: 35vw;
+    height: 35vw;
+}
+.section1 ,.section2  { 
+    text-align: left;
+    padding-left: 10px;
+    padding: 30px;
+}
+.title {
+  font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+.text {
+    padding: 3%;
+    text-align: center;
+}
+
+@media screen and (max-width:768px)
+ {
+.strengths{
+        display: block;
+        padding: 0;
+    }
+.strengths_img{
+        width: 65vw;
+        height:65vw;
+        margin-bottom: 1vw;
+    }
+.section1,.section2 {
+        text-align: center;
+        margin: 0;
+        padding: 2vw;
+    }
+.title{
+        font-size: 4vw;
+        padding: 0%;
+    }
+.title p{
+        margin: 1vw;
+    }
+    .text{
+        display: inline-block;
+        padding: 2vw;
+        font-size: 3vw;
+    }
+}
+
+/* スキル
+--------------------------------*/
+p.skills_title1,p.skills_title2{
+  font-size: 30px;
+  font-weight: bold;
+}
+p.skills_title2{
+  margin-top: 50px;
+  margin-bottom: 5px;
+}
+.unit1,.unit2,.unit3,.unit4{
+  padding: 3px;
+  margin: 0;
+}
+
+@media screen and (max-width:600px){
+  .skills_group1{
+      margin-top:3vw;
+  }
+  p.skills_title1,p.skills_title2{
+      font-size: 5vw;
+  }
+}
+
+  /* フッター
+--------------------------------*/
+.footer {
+  height:10% ;
+  bottom: 0;
+  background-color: #ADBBC8;
+  font-size: 5%;
+  color: #ffff;
+}
+footer p {
+  margin:auto;
+  line-height: 60px;
+}
